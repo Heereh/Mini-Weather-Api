@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #242424;
+  font-family: 'Noto Sans Display', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.search-box {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 50px;
+  border-radius: 15px;
+
+  & i {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+  }
+
+  & input {
+    background-color: #fff;
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+  }
+  & button {
+    padding: 0;
+    margin-left: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.weather-container {
+  width: 323px;
+  margin-top: 20px;
+}
+
+.weather-side {
+  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #222831;
+  gap: 50px;
+  color: #fff;
+  & .weather-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.weather-side-info,
+.weather-side-bottom {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  gap: 10px;
+  z-index: 2;
+}
+.date-dayname {
+  font-size: 1.98rem;
+}
+
+.date-day,
+.location {
+  font-size: 0.9rem;
+}
+
+.weather-temp {
+  font-size: 3rem;
+}
+
+.weather-desc {
+  font-size: 1rem;
+}
+
+.weather-info {
+  display: flex;
+  padding: 0 20px 20px 20px;
+  background: #222831;
+
+  & i {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    margin-bottom: 6px;
+  }
+
+  & span {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  & p {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+.weather-info .humidity,
+.weather-info .wind {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 70px;
+}
+.weather-info .humidity {
+  justify-content: flex-start;
+}
+
+.weather-info .wind {
+  justify-content: flex-end;
+}
+
+.weather-info,
+.humidity .wind {
+  justify-content: flex-start;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
